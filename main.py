@@ -21,7 +21,7 @@ def carregar_produtos(caminho):
 # Exibir produtos no terminal
 # ===========================
 def mostrar_produtos(produtos):
-    print("\n🧺 Lista de Produtos Disponíveis:\n")
+    print("\nLista de Produtos Disponíveis:\n")
     for i, produto in enumerate(produtos, 1):
         tipo = "kg" if produto["tipo"] == "peso" else "unidade"
         print(f"{i}. {produto['nome']} ({produto['categoria']}) - R$ {produto['preco']:.2f} por {tipo}")
@@ -36,7 +36,7 @@ def adicionar_ao_carrinho(produtos, carrinho):
 
     # Validando a escolha do usuário
     if not escolha.isdigit() or not (1 <= int(escolha) <= len(produtos)):
-        print("⚠️ Opção inválida. Tente novamente.\n")
+        print("Opção inválida. Tente novamente.\n")
         return
 
     produto = produtos[int(escolha) - 1]
@@ -53,7 +53,7 @@ def adicionar_ao_carrinho(produtos, carrinho):
         if quantidade <= 0:
             raise ValueError
     except ValueError:
-        print("⚠️ Quantidade inválida. Por favor, insira um valor numérico positivo.\n")
+        print("Quantidade inválida. Por favor, insira um valor numérico positivo.\n")
         return
 
     # Adiciona ao carrinho
@@ -67,13 +67,13 @@ def adicionar_ao_carrinho(produtos, carrinho):
         "total": total_item
     })
 
-    print(f"✅ {produto['nome']} adicionado ao carrinho com sucesso!\n")
+    print(f"{produto['nome']} adicionado ao carrinho com sucesso!\n")
 
 # ===========================
 # Finaliza a compra e gera nota
 # ===========================
 def finalizar_compra(carrinho):
-    print("\n🧾 Gerando sua nota fiscal...\n")
+    print("\nGerando sua nota fiscal...\n")
     total_geral = sum(item["total"] for item in carrinho)
     nome_arquivo = "nota_fiscal.txt"
 
@@ -83,11 +83,11 @@ def finalizar_compra(carrinho):
             tipo = "kg" if item["tipo"] == "peso" else "unid."
             f.write(f"{item['nome']} ({item['categoria']}) - {item['quantidade']} {tipo} x R$ {item['preco_unitario']:.2f} = R$ {item['total']:.2f}\n")
         f.write(f"\nTOTAL DA COMPRA: R$ {total_geral:.2f}\n")
-        f.write("\nObrigado por comprar com a gente! Volte sempre! 🛒")
+        f.write("\nObrigado por comprar com a gente! Volte sempre!")
 
-    print(f"🎉 Compra finalizada com sucesso!")
-    print(f"💰 Total: R$ {total_geral:.2f}")
-    print(f"📄 Nota fiscal salva como '{nome_arquivo}'\n")
+    print(f"Compra finalizada com sucesso!")
+    print(f"Total: R$ {total_geral:.2f}")
+    print(f"Nota fiscal salva como '{nome_arquivo}'\n")
 
 # ===========================
 # Função principal (main loop)
@@ -97,10 +97,10 @@ def main():
     carrinho = []
     primeira_compra = True  # Para mudar a mensagem do menu
 
-    print("🛒 Bem-vindo(a) ao Mini Mercado!\n")
+    print("Bem-vindo(a) ao Mini Mercado!\n")
 
     while True:
-        print("\n📋 MENU PRINCIPAL")
+        print("\nMENU PRINCIPAL")
         if primeira_compra:  # Se for a primeira compra, exibe "Comprar"
             print("1 - Comprar")
         else:
@@ -117,14 +117,14 @@ def main():
             if carrinho:
                 finalizar_compra(carrinho)
             else:
-                print("🛒 Seu carrinho está vazio! Adicione produtos antes de finalizar.")
+                print("Seu carrinho está vazio! Adicione produtos antes de finalizar.")
             break
         elif opcao == "3":
-            print("\n👋 Até logo! Agradecemos sua visita.")
+            print("\nAté logo! Agradecemos sua visita.")
             break
         else:
             # Validando se a opção digitada é válida
-            print("⚠️ Opção inválida. Por favor, escolha 1, 2 ou 3.\n")
+            print("Opção inválida. Por favor, escolha 1, 2 ou 3.\n")
 
 # ===========================
 # Execução do programa
