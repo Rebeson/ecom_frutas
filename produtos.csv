@@ -4,12 +4,55 @@ Banana,Fruta,peso,4.20
 Laranja,Fruta,peso,5.00
 Uva,Fruta,peso,9.00
 Abacate,Fruta,unidade,3.50
-Alface,Verdura,unidade,2.00
-Couve,Verdura,unidade,1.50
-Espinafre,Verdura,unidade,2.80
-Rúcula,Verdura,unidade,2.20
+Pera,Fruta,peso,6.00
+Mamão,Fruta,peso,5.80
+Melancia,Fruta,peso,3.20
+Morango,Fruta,unidade,7.50
+Tangerina,Fruta,peso,4.90
+Ameixa,Fruta,peso,6.70
+Caju,Fruta,peso,5.60
+Caqui,Fruta,peso,7.10
+Figo,Fruta,peso,9.20
+Goiaba,Fruta,peso,4.80
+Jabuticaba,Fruta,peso,8.00
+Jaca,Fruta,peso,3.90
+Kiwi,Fruta,unidade,2.50
+Limão,Fruta,peso,3.30
+Maçã Verde,Fruta,peso,6.40
+Melão,Fruta,peso,3.70
+Nectarina,Fruta,peso,7.30
+Pêssego,Fruta,peso,6.90
+Romã,Fruta,unidade,4.00
+Seriguela,Fruta,peso,5.50
+Tamarindo,Fruta,peso,6.20
 Cenoura,Legume,peso,3.90
 Batata,Legume,peso,2.80
 Tomate,Legume,peso,4.50
 Cebola,Legume,peso,3.30
 Abobrinha,Legume,peso,4.00
+Mandioquinha,Legume,peso,6.40
+Inhame,Legume,peso,4.70
+Quiabo,Legume,peso,3.90
+Berinjela,Legume,peso,4.10
+Chuchu,Legume,peso,2.60
+Alface,Verdura,unidade,2.00
+Couve,Verdura,unidade,1.50
+Espinafre,Verdura,unidade,2.80
+Rúcula,Verdura,unidade,2.20
+Repolho,Verdura,unidade,2.40
+Agrião,Verdura,unidade,2.10
+Chicória,Verdura,unidade,2.30
+Mostarda,Verdura,unidade,2.00
+Almeirão,Verdura,unidade,2.20
+Acelga,Verdura,unidade,2.60
+Alface Crespa,Verdura,unidade,2.10
+Alface Roxa,Verdura,unidade,2.20
+Almeirão Roxo,Verdura,unidade,2.30
+Broto de Bambu,Verdura,unidade,3.50
+Catalonha,Verdura,unidade,2.40
+Chicória Lisa,Verdura,unidade,2.10
+Dente-de-leão,Verdura,unidade,2.00
+Escarola,Verdura,unidade,2.70
+Nabo,Verdura,peso,3.40
+Repolho Roxo,Verdura,unidade,2.90
+Serralha,Verdura,unidade,2.20
